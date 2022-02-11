@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+}
+.header{
+    text-align: center;
+    padding: 30px;
+    background-color: rgb(104, 136, 133);
+    background-image: linear-gradient(to right, rgb(185, 179, 179), rgb(90, 90, 93));
+    padding-bottom: 2px;
+    padding-top: 1px;
+}
+.header h1{
+    font-size: 50px;
+}
+h1 {
+    font-size: 72px;
+    background: -webkit-linear-gradient(rgb(202, 243, 114), rgb(74, 230, 87));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: none;
+  }
+h2{
+    font-weight: bolder;
+}
+.header p{
+    font-size: 18px;
+    position: relative;
+    bottom: 20px;
+}
+.deco{
+    text-decoration: none;
+    color: black;
+}
+.deco:hover{
+    color: blue;
+    text-decoration: underline;
+}
+.topnav{
+    overflow: hidden;
+    background-color: rgb(2, 0, 0);
+}
+.topnav a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+.topnav a:hover{
+    background-color: #ccc;
+    color: black;
+}
+.leftcolumn{
+    float: left;
+    width: 75%;
+    padding-right: 10px;
+}
+.rightcolumn{
+    float: left;   
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+.fakeimgpy{
+    height: 285px;
+}
+.fakeimgpy img{
+    height: 100%;
+    width: 100%;
+}
+.spacing{
+    word-spacing: 6px;
+}
+.fakeimgdata{
+    height: 285px;
+}
+.fakeimgdata img{
+    height: 100%;
+    width: 100%;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+.card1{
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    height: 320px;
+}
+.card2{
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    height: 230px;
+}
+.card1 p{
+    position: relative;
+    top: 5px;
+}
+.card1 img{
+    height: 100px;
+    width: 100px;  
+    margin-left: 15px;
+}
+
+.follow{
+    height: 40px;
+    width: 40px;
+    margin-bottom: 7px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+  background-color: rgb(104, 136, 133);
+}
+.span1{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Media query */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+    .fakeimgdata{
+        width: 100%;
+    }
+    .fakeimgpy{
+        background-image: url('https://pxwall.com/wp-content/uploads/2019/04/4K-Tech-Samsung-Wallpapers.jpg');
+    }
+}
+@media screen and (max-width: 400px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
